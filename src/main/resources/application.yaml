@@ -1,0 +1,19 @@
+server:
+  servlet.contextPath: /swagger
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        security: INFO
+
+swagger:
+  api:
+    info:
+      path-exclude: '/(error|actuator|healthCheck|test)'
+      title: ${SWAGGER_API_TITLE:Swagger Test}
+      description: ${SWAGGER_API_DESCRIPTION:Description}
+      version: ${SWAGGER_API_VERSION:v1}
+      appname: ${SWAGGER_APP_NAME:Swagger Test}
