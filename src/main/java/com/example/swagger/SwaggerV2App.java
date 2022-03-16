@@ -6,10 +6,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2 // or use environment property
-public class SwaggerApplication {
+public class SwaggerV2App {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SwaggerApplication.class, args);
+		SpringApplication.run(SwaggerV2App.class, args);
+
+		//http://localhost:8080/swagger/v2/api-docs
+		//http://localhost:8080/swagger/swagger-ui.html
 	}
 
 }
